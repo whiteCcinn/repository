@@ -6,7 +6,7 @@ abstract class Criteria {
 
     /**
      * @param $model
-     * @param Repository $repository
+     * @param RepositoryInterface $repository
      * @return mixed
      */
     public abstract function apply($model, Repository $repository);

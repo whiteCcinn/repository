@@ -262,7 +262,10 @@ abstract class Repository implements RepositoryInterface, CriteriaInterface
      */
     public function setModel($eloquentModel)
     {
-        $this->newModel = $this->app->make($eloquentModel);
+        if (!$eloquentModel instanceof Model)
+            $this->newModel = $this->app->make($eloquentModel);
+        else
+            $this->newModel = $eloquentModel;
 
         if (!$this->newModel instanceof Model)
             throw new RepositoryException("Class {$this->newModel} must be an instance of Illuminate\\Database\\Eloquent\\Model");

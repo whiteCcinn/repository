@@ -1,6 +1,6 @@
 {
-  "name": "bosnadev/repositories",
-  "description": "Laravel Repositories",
+  "name": "whiteCcinn/repositories",
+  "description": "Laravel Repositories fork from bosnadev",
   "license": "MIT",
   "homepage": "https://bosnadev.com",
   "keywords": ["laravel", "repository", "repositories", "eloquent", "database"],
